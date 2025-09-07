@@ -7,7 +7,7 @@ def get_vector_store(splits, embeddings):
     """
     with open("config.yaml", "r") as f:
         config = yaml.safe_load(f)
-    persist_directory = config.get("persist_dir")
+    persist_directory = config.get("persist_directory")
     vectordb = Chroma.from_documents(
         documents=splits,
         embedding=embeddings,
