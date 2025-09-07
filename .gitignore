@@ -2,3 +2,4 @@
 .idea/
 core/__pycache__/
 utils/__pycache__/
+extracted_images/
